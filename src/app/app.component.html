@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div>
+    <div>
+      <button (click)="changeTheme()">
+        Change Theme
+      </button>
+      <div>
+        {{activeTheme}}
+      </div>
+    </div>
+    <div>
+      <input type="radio" name="platform" value="android" (change)="radioChange($event.target.value)"> Android
+      <input type="radio" name="platform" value="ios" (change)="radioChange($event.target.value)"> iOS
+      <input type="radio" name="platform" value="desktop" (change)="radioChange($event.target.value)" checked> Desktop
+    </div>
+  </div>
+  <div>
+    <div #host></div>
+  </div>
+</div>
